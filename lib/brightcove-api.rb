@@ -52,6 +52,7 @@ module Brightcove
 
       query = {}
       query.merge!({:query => options})
+      query.merge!({:format => :xml}) if options.key?(:output) && options[:output] == "mrss"
 
       self.class.get(@read_api_url, query)
     end
