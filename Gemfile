@@ -12,5 +12,5 @@ group :test do
 end
 
 gem 'httparty', "~> 0.6.1"
-gem 'json', "~> 1.4.6"
+gem 'json'
 gem 'rest-client', "~> 1.6.1"
